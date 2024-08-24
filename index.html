@@ -56,13 +56,16 @@
   <body class="manrope-regular">
     <!-- Header section here  -->
     <header class="lg:w-full mt-8">
+
             <div class="navbar w-3/4 mx-auto bg-base-100 ">
+
+              <!-- Rinterio Button container -->
                 <div class="flex-1">
                   <a class="btn btn-ghost text-3xl font-extrabold hover:bg-black hover:text-white">
                     <i class="fa-solid fa-arrow-right bg-green-400 rounded-full p-2 -rotate-45 text-xl "></i> Rinterio</a>
                 </div>
 
-                <!-- HOME CONTACT US  -->
+                <!-- HOME CONTACT US small device hidden -->
                 <div class="hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
                     <li class="font-bold"><a>Home</a></li>
@@ -74,7 +77,7 @@
                 </div>
 
 
-
+             
                 <div class="hidden lg:flex">
                     <!-- Search Icon -->
                     <button class="btn btn-ghost btn-circle">
@@ -111,6 +114,7 @@
                               </svg>
                             </div>
                           </div>
+
                           <div
                             tabindex="0"
                             class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
@@ -122,19 +126,44 @@
                               </div>
                             </div>
                           </div>
+
                         </div>
 
                   <a class="btn rounded-full bg-green-500 font-extrabold hover:bg-black hover:text-white">Book Consultant <i class="fa-solid fa-arrow-right -rotate-45 rounded-full p-2 bg-black text-white border-none "></i></a>
                 </div>
-                
-                <!-- Hamburger Icon on mobile device  -->
-
-
               </div>
+
+              <!-- Hamburger Icon on mobile device  -->
+              <label class="btn btn-circle swap swap-rotate lg:hidden">
+                <!-- this hidden checkbox controls the state -->
+                <input type="checkbox" />
+              
+                <!-- hamburger icon -->
+                <svg
+                  class="swap-off fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512">
+                  <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
+                </svg>
+              
+                <!-- close icon -->
+                <svg
+                  class="swap-on fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 512 512">
+                  <polygon
+                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                </svg>
+              </label>
     </header>
 
     <!-- Main section here  -->
     <main>
+
 
       <!-- Banner Section  -->
       <div class="flex flex-col justify-center items-center w-3/4 mx-auto mb-32">
@@ -148,30 +177,31 @@
           <h1 class="text-4xl lg:text-6xl font-extrabold mb-8">A barn house of this design has a striking appearance</h1>
           <p class="mb-8 lg:text-base text-xs">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
 
-          <button class="bg-green-600 rounded-full btn hover:bg-black hover:text-white">View Details <i class="fa-solid fa-arrow-right p-2 rounded-full bg-green-300 -rotate-45 "></i></button>
+          <button class="bg-green-600 w-full lg:w-fit rounded-full btn hover:bg-black hover:text-white">View Details <i class="fa-solid fa-arrow-right p-2 rounded-full bg-green-300 -rotate-45 "></i></button>
 
         </div>
       </div>
 
-            <!-- Review section  -->
-             <section class="w-full bg-gray-200 relative mb-20">
+
+        <!-- Review section  -->
+          <section class="w-full bg-gray-200 relative mb-20">
 
               <div class="absolute left-24 top-7">
                 <img src="assets/Vector.png" alt="">
               </div>
              <!-- container -->
-             <div class="w-3/4 mx-auto py-24 flex justify-between gap-9">
+             <div class="w-3/4 mx-auto py-24 flex flex-col lg:flex-row justify-between items-center  text-center lg:text-left gap-9">
               <!-- Text side div  -->
-               <div class="">
+               <div class="flex  flex-col justify-center items-center">
                 <button class="flex justify-center items-center bg-white px-4 py-1 text-base font-bold rounded-3xl  mb-6"> <i class="fa-solid fa-arrow-right"></i>  About Us</button>
 
-                <h1 class="text-4xl font-bold mb-6">We design thoughtful, liveable spaces</h1>
-                <p class="text-base font-medium mb-6">The barn house captivates with its blend of rustic charm and 
+                <h1 class=" text-2xl lg:text-4xl font-bold mb-6">We design thoughtful, liveable spaces</h1>
+                <p class="text-sm lg:text-base font-medium mb-6">The barn house captivates with its blend of rustic charm and 
                   modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
                 <!-- Cards 01 -->
-                  <div class="bg-white rounded-2xl flex justify-between p-6 mb-6">  <!-- container  --> 
-                  <div>
+                  <div class="bg-white rounded-2xl flex gap-5 justify-between p-6 mb-6">  <!-- container  --> 
+                  <div >
                     <img src="assets/commercial.png" alt="">
                   </div>
 
@@ -183,7 +213,7 @@
                  </div>
 
                 <!-- Cards 02 -->
-                  <div class="bg-white rounded-2xl flex justify-between p-6 mb-6">  <!-- container  --> 
+                  <div class="bg-white rounded-2xl flex gap-5 justify-between p-6 mb-6">  <!-- container  --> 
                   <div>
                     <img src="assets/residential.png" alt="">
                   </div>
@@ -217,7 +247,7 @@
 
               <!-- Cards container  -->
 
-            <div class="grid grid-cols-4 gap-6 pb-28">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 pb-28">
 
                 <!-- Card 01  -->
                <div class="rounded-2xl bg-pink-300 flex flex-col p-6">
@@ -273,14 +303,14 @@
                 </div>
 
                 <!-- Grid container -->
-                <div class="grid grid-cols-8
-                 grid-rows-2 gap-6 w-3/4 mx-auto p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-8 
+                 lg:grid-rows-2 gap-6 w-3/4 mx-auto p-6">
                   
                   <!-- Card 01 -->
-                  <div class="border-2 border-gray-300 rounded-2xl p-6 flex justify-between gap-6 w-full col-span-5">
+                  <div class="border-2 border-gray-300 rounded-2xl p-6 flex flex-col lg:flex-row  justify-between gap-6 w-full lg:col-span-5">
 
-                    <div class="w-2/5"><img class="object-cover h-full w-full rounded-2xl" src="assets/img1.png" alt=""></div>
-                    <div class="w-3/5">
+                    <div class="w-full lg:w-2/5"><img class="object-cover h-full w-full rounded-2xl" src="assets/img1.png" alt=""></div>
+                    <div class=" w-full lg:w-3/5">
                       <h3 class="text-2xl font-extrabold mb-3">Commercial</h3>
                       <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
                       <button class="text-xl font-extrabold">View Details <i class="fa-solid fa-arrow-right p-2 rounded-full -rotate-45 bg-green-600"></i></button>
@@ -288,22 +318,22 @@
                   </div>
 
                   <!-- Card 02  -->
-                   <div class="border-2 border-gray-300 rounded-2xl p-6 col-span-3">
+                   <div class="border-2 border-gray-300 rounded-2xl p-6 lg:col-span-3">
                     <img class="object-cover h-full w-full rounded-2xl" src="assets/img2.png" alt="">
                   </div>
                   
                    <!-- card 03  -->
 
-                   <div class="p-6 border-2 border-gray-300 rounded-2xl col-span-2">
+                   <div class="p-6 border-2 border-gray-300 rounded-2xl lg:col-span-2">
                     <img class="object-cover w-full h-full rounded-2xl" src="assets/img3.png" alt="">
                    </div>
 
 
                   <!-- Card 04 -->
-                  <div class="p-6 flex justify-between gap-6 col-span-4 border-2 border-gray-300 rounded-2xl">
+                  <div class="p-6 flex lg:flex-row flex-col justify-between gap-6 lg:col-span-4 border-2 border-gray-300 rounded-2xl">
 
-                    <div class="w-1/2"><img class="rounded-2xl h-full w-full" src="assets/img4.png" alt=""></div>
-                    <div class="w-1/2 flex flex-col justify-center ">
+                    <div class="w-full lg:w-1/2"><img class="rounded-2xl h-full w-full" src="assets/img4.png" alt=""></div>
+                    <div class="w-full lg:w-1/2 flex flex-col justify-center ">
                       <h3 class="text-2xl font-extrabold mb-3">Commercial</h3>
                       <p class="text-base font-medium">The barn house captivates with its blend of rustic charm and modern.</p>
                       <button class="text-xl font-extrabold text-left">View Details <i class="fa-solid fa-arrow-right p-2 rounded-full -rotate-45 bg-green-600"></i></button>
@@ -312,7 +342,7 @@
 
                   <!-- card 05  -->
 
-                  <div class="border-2 border-gray-300 rounded-2xl p-6 col-span-2">
+                  <div class="border-2 border-gray-300 rounded-2xl p-6 lg:col-span-2">
                     <img class="object-cover rounded-2xl h-full w-full" src="assets/img5.png" alt="">
                    </div>
 
@@ -333,16 +363,27 @@
 
               <!-- Form section  -->
               <div class="w-3/4 mx-auto pb-24">
-                <form class="grid grid-cols-2 gap-6" action="">
+                <form class="grid grid-cols-1 lg:grid-cols-2 gap-6" action="">
+                  <div>
+                    <input class="p-4 rounded-full w-full" type="text" name="" id=""  placeholder="First Name*">
+                  </div>
+                  <div>
+                    <input class="p-4 rounded-full w-full" type="text" name="" id=""  placeholder="Last Name*">
+                  </div>
+                  <div>
+                    <input class="p-4 rounded-full w-full" type="text" name="" id=""  placeholder="Phone Number*">
+                  </div>
+                  <div>
+                    <input class="p-4 rounded-full w-full" type="email" name="" id="" placeholder="Email Number*">
+                  </div>
 
-                  <input class="p-4 rounded-full " type="text" name="" id=""  placeholder="First Name*">
-                  <input class="p-4 rounded-full " type="text" name="" id=""  placeholder="Last Name*">
-                  <input class="p-4 rounded-full " type="text" name="" id=""  placeholder="Phone Number*">
-                  <input class="p-4 rounded-full " type="email" name="" id="" placeholder="Email Number*">
+                  <div>
+                    <textarea class="w-full p-4 col-span-1 lg:col-span-2 rounded-3xl" name="" id="" cols="3" rows="10">Write your message here</textarea>
+                  </div>
 
-                  <textarea class="p-4 col-span-2 rounded-3xl" name="" id="" cols="3" rows="10">Write your message here</textarea>
-                  
-                  <button class="bg-green-300 text-base py-3 rounded-full col-span-2 font-extrabold">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full p-2"></i></button>
+                  <div>
+                    <button class="bg-green-300 text-base py-3 rounded-full w-full font-extrabold">Send Mail <i class="fa-solid fa-arrow-right -rotate-45 text-white bg-black rounded-full p-2"></i></button>
+                  </div>
 
                 </form>
               </div>
@@ -358,7 +399,7 @@
       <div class="pt-20 w-2/4 mx-auto">
         <button class="btn rounded-full bg-green-600 text-3xl text-white font-extrabold mb-4 border-none"> <i class="fa-solid fa-arrow-right p-2 rounded-full bg-black -rotate-45 "></i> Rinterio</button>
       <p class="text-gray-200">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-      <ul class="my-12  flex justify-around text-gray-200">
+      <ul class="my-12 flex flex-col lg:flex-row items-center justify-around text-gray-200">
         <li class="font-extrabold">Home</li>
         <li>Services</li>
         <li>Portfolio</li>
